@@ -21,11 +21,11 @@ async function logTime() {
 }
 
 // Recursive function to continuously log the time every second
-function startClock() {
+function showClock() {
   logTime().then(() => {
-    setTimeout(startClock, 1000);
+    setTimeout(showClock, 1000);
   });
 }
 
 // Start the clock
-startClock();
+showClock();
